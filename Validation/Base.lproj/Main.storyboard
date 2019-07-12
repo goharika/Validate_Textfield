@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Validation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text to validate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CJ-j7-G0a">
+                                <rect key="frame" x="149.5" y="159" width="115.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input your text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B3F-VC-DDc">
+                                <rect key="frame" x="62" y="214" width="290" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0H-j8-BME">
+                                <rect key="frame" x="62" y="267" width="290" height="30"/>
+                                <color key="backgroundColor" red="0.30836002200000001" green="0.83729484269999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Validate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="validateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kPg-0I-wnI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B3F-VC-DDc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="868-PK-MlF"/>
+                            <constraint firstItem="F0H-j8-BME" firstAttribute="top" secondItem="B3F-VC-DDc" secondAttribute="bottom" constant="23" id="8jt-2G-dY5"/>
+                            <constraint firstItem="F0H-j8-BME" firstAttribute="centerX" secondItem="B3F-VC-DDc" secondAttribute="centerX" id="9fq-9f-6dr"/>
+                            <constraint firstItem="B3F-VC-DDc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="a16-NN-dbu"/>
+                            <constraint firstItem="F0H-j8-BME" firstAttribute="width" secondItem="B3F-VC-DDc" secondAttribute="width" id="bep-BC-Si5"/>
+                            <constraint firstItem="B3F-VC-DDc" firstAttribute="top" secondItem="5CJ-j7-G0a" secondAttribute="bottom" constant="34" id="ia0-2x-vzp"/>
+                            <constraint firstItem="5CJ-j7-G0a" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oyt-GO-Yhx"/>
+                            <constraint firstItem="5CJ-j7-G0a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="115" id="zop-Nr-pMy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputTextfield" destination="B3F-VC-DDc" id="kOw-d9-TZI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
