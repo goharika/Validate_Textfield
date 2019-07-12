@@ -19,8 +19,6 @@ class ValidationError: Error {
 protocol ValidatorConvertible {
     func validated(_ value: String) throws -> String
 }
-
-
 enum ValidatorType {
     case email
     case password
